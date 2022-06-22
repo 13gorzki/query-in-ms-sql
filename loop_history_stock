@@ -1,4 +1,3 @@
-
 declare @data date = (select min(Daty) from dbo.pom_daty)
 declare @iloscDniWrzuconych int = 0
 
@@ -26,6 +25,3 @@ BEGIN
 END
 
 print 'Ilość dni wrzuconych: '+convert(nvarchar(100),@iloscDniWrzuconych)
- 
-
-
