@@ -37,8 +37,8 @@ SET @tableHTML =
     N'</table>' ;  
 
 ------------------------------------------------------------------------------------------------------------mail
-			USE msdb
-			EXEC sp_send_dbmail 
+			 
+			EXEC msdb..sp_send_dbmail 
 			@profile_name=@profil
 			,@recipients=@recipients_mail
 			,@subject='Jobs Fail'
